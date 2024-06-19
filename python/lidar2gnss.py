@@ -1,8 +1,8 @@
 '''
 Author: fanjin jinfan.@novauto.com.cn
 Date: 2024-06-18 22:33:44
-LastEditors: fanjin jinfan.@novauto.com.cn
-LastEditTime: 2024-06-19 00:10:17
+LastEditors: fanjin 
+LastEditTime: 2024-06-19 09:38:38
 FilePath: /calibtools/python/lidar2gnss.py
 Description: 利用opencv的手眼标定实现  lidar和gnss外参的标定
 
@@ -53,7 +53,7 @@ def align_two_poses(base_tss, other_tss, other_quats, other_trans):
     other_align_trans = []
     idx = 0
     for ts in base_tss:
-        while idx<other_tss.size()-1 and (not(ts>=other_tss[idx] and ts<=other_tss[idx+1])):
+        while idx<len(other_tss)-1 and (not(ts>=other_tss[idx] and ts<=other_tss[idx+1])):
             idx += 1
         alpha = (ts-other_tss[idx])/(other_tss[idx+1]-other_tss[idx])
         q_interp = Quaternion.slerp(other_quats[idx], other_quats[idx+1], alpha)
@@ -70,7 +70,7 @@ def poses_to_mats(quats, trans):
         rot_mat = quat.rotation_matrix
         pose = np.eye(4)
         pose[:3,:3] = rot_mat
-        pose[3,:3] = tran
+        pose[:3,3] = tran
         mats.append(pose)
     return mats
 
@@ -90,7 +90,7 @@ def mats_to_Rs_ts(mats: List[np.ndarray]):
     ts = []
     for mat in mats:
         R = mat[:3,:3]
-        t = mat[3,:3]
+        t = mat[:3,3]
         Rs.append(R)
         ts.append(t)
         
@@ -115,16 +115,17 @@ def calib_lidar_2_gnss(lidar_pose_txt:str, gnss_pose_txt:str):
     # methodHE:  https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#gad10a5ef12ee3499a0774c7904a801b99
     # methodHE = [cv2.CALIB_HAND_EYE_TSAI, cv2.CALIB_HAND_EYE_PARK, cv2.CALIB_HAND_EYE_HORAUD, cv2.CALIB_HAND_EYE_ANDREFF, cv2.CALIB_HAND_EYE_DANIILIDIS]
     MTH = cv2.CALIB_HAND_EYE_TSAI
+    
+    # for MTH in methodHE:
     R_lidar2gnss, t_lidar2gnss = cv2.calibrateHandEye(g_Rs, g_ts, l_Rs, l_ts, None, None, MTH)
     
     print("lidar2gnss:")
     print(R_lidar2gnss)
     print(t_lidar2gnss)
 
-
 def main():
-    lidar_pose_txt = "/home/frank/data/github/calibtools/data/lidar-poses.txt"
-    gnss_pose_txt = ""
+    lidar_pose_txt = "/home/frank/data/GitLab/g3_calib/data/imu_top_jx_lidar/2024-06-17-14-31-38/lidar-poses.txt"
+    gnss_pose_txt = "/home/frank/data/GitLab/g3_calib/data/imu_top_jx_lidar/2024-06-17-14-31-38/2024-06-17-14-31-38.txt"
     # load_pose_txt(lidar_pose_txt)
     
     #
