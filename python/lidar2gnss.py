@@ -2,10 +2,17 @@
 Author: fanjin jinfan.@novauto.com.cn
 Date: 2024-06-18 22:33:44
 LastEditors: fanjin 
-LastEditTime: 2024-06-19 09:38:38
+LastEditTime: 2024-06-19 10:15:29
 FilePath: /calibtools/python/lidar2gnss.py
 Description: 利用opencv的手眼标定实现  lidar和gnss外参的标定
 
+# conda 环境创建
+conda create -n handeye python=3.8
+pip install pyquaternion
+pip install opencv-python==4.5.1.48 -i https://pypi.tuna.tsinghua.edu.cn/simple --verbose
+pip install opencv-contrib-python==4.5.1.48 -i https://pypi.tuna.tsinghua.edu.cn/simple --verbose
+
+# txt 内容格式：
 frame_id timestamp x y z qx qy qz qw
 
 Copyright (c) 2024 by Frank, All Rights Reserved. 
