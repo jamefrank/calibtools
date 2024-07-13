@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "calibtools"
+version = "0.1.0"
+description = "calib common sensors"
+authors = ["frank <frankjanemm@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.8.17"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
