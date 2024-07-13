@@ -4,9 +4,16 @@ version = "0.1.0"
 description = "calib common sensors"
 authors = ["frank <frankjanemm@gmail.com>"]
 readme = "README.md"
+packages = [{include = "calibtools"}]
 
 [tool.poetry.dependencies]
 python = "~3.8.17"
+opencv-python = "3.4.18.65"
+opencv-contrib-python = "3.4.18.65"
+loguru = "^0.7.2"
+
+[tool.poetry.scripts]
+calib_fish_camera_charuco = "calibtools.camera.calib_K_D:calib_fish_camera_charuco"
 
 
 [build-system]
