@@ -38,3 +38,4 @@ logs/
 .catkin_tools/
 
 tempCodeRunnerFile.py
+.vscode
