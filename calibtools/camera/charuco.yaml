@@ -1,4 +1,9 @@
 # example
 
 
+dict: DICT_4X4_250
+squaresX: 4
+squaresY: 3
+squareLength: 180  # mm
+markerLength: 140  # mm
 
