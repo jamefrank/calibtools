@@ -1,0 +1,4 @@
+
+[submodule "calibtools/thirdparty/SuperGluePretrainedNetwork"]
+	path = calibtools/thirdparty/SuperGluePretrainedNetwork
+	url = https://github.com/magicleap/SuperGluePretrainedNetwork.git

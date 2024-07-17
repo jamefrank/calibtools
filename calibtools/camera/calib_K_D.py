@@ -1,8 +1,8 @@
 '''
 Author: fanjin jinfan.@novauto.com.cn
 Date: 2024-07-13 22:35:36
-LastEditors: fanjin jinfan.@novauto.com.cn
-LastEditTime: 2024-07-15 23:16:58
+LastEditors: fanjin 
+LastEditTime: 2024-07-17 09:40:26
 FilePath: /calibtools/calibtools/camera/calib_K_D.py
 Description:  标定相机内参和畸变系数
 
@@ -23,7 +23,7 @@ from calibtools.log import log_utils
 from calibtools.camera.common import CamModel
 
 
-logger = log_utils.get_logger()
+logger = log_utils.get_logger() 
 
 
 def calib_camera_charuco():
@@ -172,7 +172,9 @@ def calib_camera_charuco():
     logger.info(f'D:\n{D}')
     logger.info(f'Total Mean Error: {retval}')
     
-
+def test_k_d():
+    # TODO
+    pass
     
 def main():
     
