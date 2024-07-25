@@ -1,0 +1,316 @@
+[0.096s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/frank/data/GitHub/calibtools']
+[0.096s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/frank/data/GitHub/calibtools'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f9dbb655810>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f9dbb6549d0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f9dbb6549d0>>)
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.235s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/frank/data/GitHub/calibtools'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extension 'ros'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extensions ['cmake', 'python']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extension 'cmake'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extension 'python'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extensions ['python_setup_py']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools) by extension 'python_setup_py'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extensions ['cmake', 'python']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extension 'python'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extensions ['python_setup_py']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data) by extension 'python_setup_py'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extensions ['cmake', 'python']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extension 'python'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extensions ['python_setup_py']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800) by extension 'python_setup_py'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extension 'ros'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extension 'cmake'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extension 'python'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extensions ['python_setup_py']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data) by extension 'python_setup_py'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extension 'ros'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extension 'cmake'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extension 'python'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extensions ['python_setup_py']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800) by extension 'python_setup_py'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extension 'ros'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extensions ['cmake', 'python']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extension 'cmake'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extension 'python'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extensions ['python_setup_py']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694629) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extension 'ros'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extensions ['cmake', 'python']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extension 'cmake'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extension 'python'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extensions ['python_setup_py']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718694956) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/800/un_1718695040) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694636) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718694950) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-f800/data/ffish/1718695043) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/b_undist) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extension 'ros'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extensions ['cmake', 'python']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extension 'cmake'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extension 'python'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extensions ['python_setup_py']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/f_undist) by extension 'python_setup_py'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extension 'ros'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extensions ['cmake', 'python']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extension 'cmake'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extension 'python'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extensions ['python_setup_py']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l) by extension 'python_setup_py'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extension 'ros'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extensions ['cmake', 'python']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extension 'cmake'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extension 'python'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extensions ['python_setup_py']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/bev-fish/l_undist) by extension 'python_setup_py'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extension 'ros'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extensions ['cmake', 'python']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extension 'cmake'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extension 'python'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extensions ['python_setup_py']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/ffish) by extension 'python_setup_py'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extension 'ros'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extensions ['cmake', 'python']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extension 'cmake'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extension 'python'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extensions ['python_setup_py']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/data/lidar2gnss) by extension 'python_setup_py'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/log) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/log) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/log) ignored
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extension 'ros'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extensions ['cmake', 'python']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extension 'cmake'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extension 'python'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extensions ['python_setup_py']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/python) by extension 'python_setup_py'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extension 'ros'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extensions ['cmake', 'python']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extension 'cmake'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extension 'python'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extensions ['python_setup_py']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src) by extension 'python_setup_py'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src/in-cam) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src/in-cam) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src/in-cam) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src/in-cam) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src/in-cam) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src/in-cam) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src/in-cam) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src/in-cam) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(/home/frank/data/GitHub/calibtools/src/in-cam) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package '/home/frank/data/GitHub/calibtools/src/in-cam' with type 'ros.catkin' and name 'in-cam'
+[0.257s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
