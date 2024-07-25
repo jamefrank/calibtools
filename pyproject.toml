@@ -4,17 +4,20 @@ version = "0.1.0"
 description = "calib common sensors"
 authors = ["frank <frankjanemm@gmail.com>"]
 readme = "README.md"
-packages = [{include = "calibtools"}]
+packages = [{ include = "calibtools" }]
 
 [tool.poetry.dependencies]
 python = "~3.8.17"
+loguru = "*"
+pyyaml = "^6.0.1"
+tqdm = "*"
+pyntcloud = "^0.3.1"
+torch = { version = "1.13.1+cu117", source = "pytorch_cu11_7" }
+torchvision = { version = "0.14.1+cu117", source = "pytorch_cu11_7" }
+torchaudio = { version = "0.13.1", source = "pytorch_cu11_7" }
+pc-common = {git = "ssh://git@192.168.3.224/perception-infra/common/pc-common.git"}
 opencv-python = "3.4.18.65"
 opencv-contrib-python = "3.4.18.65"
-loguru = "^0.7.2"
-pyyaml = "^6.0.1"
-torch = {version = "1.12.1+cu113", source = "pytorch_cu11_3"}
-torchvision = {version = "0.13.1+cu113", source = "pytorch_cu11_3"}
-torchaudio = {version = "0.12.1", source = "pytorch_cu11_3"}
 
 [tool.poetry.scripts]
 calib_camera_charuco = "calibtools.camera.calib_K_D:calib_camera_charuco"
@@ -24,6 +27,18 @@ calib_camera_charuco = "calibtools.camera.calib_K_D:calib_camera_charuco"
 name = "pytorch_cu11_3"
 url = "https://download.pytorch.org/whl/cu113"
 priority = "supplemental"
+
+
+[[tool.poetry.source]]
+name = "pytorch_cu11_7"
+url = "https://download.pytorch.org/whl/cu117"
+priority = "supplemental"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
 
 [build-system]
 requires = ["poetry-core"]
