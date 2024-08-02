@@ -2,7 +2,7 @@
 Author: fanjin 
 Date: 2024-07-19 11:39:42
 LastEditors: fanjin 
-LastEditTime: 2024-07-21 10:31:45
+LastEditTime: 2024-08-02 14:18:56
 FilePath: /calibtools/calibtools/lidar2camera/lidar2camera_manual.py
 Description: 
 
@@ -16,6 +16,7 @@ Copyright (c) 2024 by Frank, All Rights Reserved.
 import os
 import cv2
 import numpy as np
+from tqdm import tqdm
 from typing import List
 from calibtools.file_utils.time_align import get_time_align_pairs, ln_files
 from calibtools.img_utils.undist_img import patch_undist_img_pinhole_v1
@@ -104,15 +105,63 @@ def main():
 
     sensor = G3_Calib_Parse()
 
-    pcd_yml = "/home/frank/data/G3/scan_calib/pcd/lb/pcd_corners.yaml"
-    img_yml = "/home/frank/data/G3/scan_calib/pcd/lb/img_corners.yaml"
-    lidar2camera = calib_init_guess(pcd_yml, img_yml, sensor.scan_lb.K)
+    pcd_dir = "/home/frank/data/G3/scan_fish_calib/all_pcds"
+    f_dir = "/home/frank/data/G3/scan_fish_calib/f_undist"
+    b_dir = "/home/frank/data/G3/scan_fish_calib/b_undist"
+    l_dir = "/home/frank/data/G3/scan_fish_calib/l_undist"
+    r_dir = "/home/frank/data/G3/scan_fish_calib/r_undist"
+
+    pairs = get_time_align_pairs(pcd_dir, [f_dir, b_dir, l_dir, r_dir], [".pcd", ".jpg", ".jpg", ".jpg", ".jpg"], thresh=0.1*0.5)
+
+    abs_pcd = [os.path.join(pcd_dir, item[0]) for item in pairs]
+    abs_f = [os.path.join(f_dir, item[1]) for item in pairs]
+    abs_b = [os.path.join(b_dir, item[2]) for item in pairs]
+    abs_l = [os.path.join(l_dir, item[3]) for item in pairs]
+    abs_r = [os.path.join(r_dir, item[4]) for item in pairs]
+
+    # #
+    # calib_dir = "/home/frank/data/G3/scan_fish_calib/calib_f"
+    # pcd_yml = calib_dir + "/pcd_corners.yaml"
+    # img_yml = calib_dir + "/img_corners.yaml"
+    # lidar2camera = calib_init_guess(pcd_yml, img_yml, sensor.f_fish.K)
+    # output_dir = calib_dir
+    # for idx, (img_path, pcd_path) in tqdm(enumerate(zip(abs_f, abs_pcd))):
+    #     project_pcd_to_img(img_path, pcd_path, lidar2camera, sensor.f_fish.K, output_dir)
+    # pass
+
+    # #
+    # calib_dir = "/home/frank/data/G3/scan_fish_calib/calib_b"
+    # pcd_yml = calib_dir + "/pcd_corners.yaml"
+    # img_yml = calib_dir + "/img_corners.yaml"
+    # lidar2camera = calib_init_guess(pcd_yml, img_yml, sensor.b_fish.K)
+    # output_dir = calib_dir
+    # for idx, (img_path, pcd_path) in tqdm(enumerate(zip(abs_b, abs_pcd))):
+    #     if idx < len(abs_b)-50:
+    #         continue
+    #     project_pcd_to_img(img_path, pcd_path, lidar2camera, sensor.b_fish.K, output_dir)
+    # pass
 
     #
-    img_path = "/home/frank/data/G3/scan_calib/pcd/lb.jpg"
-    pcd_path = "/home/frank/data/G3/scan_calib/pcd/1721273648.819936275.pcd"
-    output_dir = "/home/frank/data/GitHub/calibtools/calibtools/lidar2camera/data"
-    project_pcd_to_img(img_path, pcd_path, lidar2camera, sensor.scan_lb.K, output_dir)
+    # calib_dir = "/home/frank/data/G3/scan_fish_calib/calib_l"
+    # pcd_yml = calib_dir + "/pcd_corners.yaml"
+    # img_yml = calib_dir + "/img_corners.yaml"
+    # lidar2camera = calib_init_guess(pcd_yml, img_yml, sensor.l_fish.K)
+    # output_dir = calib_dir
+    # for idx, (img_path, pcd_path) in tqdm(enumerate(zip(abs_l, abs_pcd))):
+    #     if idx < len(abs_b)-50:
+    #         continue
+    #     project_pcd_to_img(img_path, pcd_path, lidar2camera, sensor.l_fish.K, output_dir)
+    # pass
+
+    calib_dir = "/home/frank/data/G3/scan_fish_calib/calib_r"
+    pcd_yml = calib_dir + "/pcd_corners.yaml"
+    img_yml = calib_dir + "/img_corners.yaml"
+    lidar2camera = calib_init_guess(pcd_yml, img_yml, sensor.r_fish.K)
+    output_dir = calib_dir
+    for idx, (img_path, pcd_path) in tqdm(enumerate(zip(abs_r, abs_pcd))):
+        if idx < len(abs_b)-300:
+            continue
+        project_pcd_to_img(img_path, pcd_path, lidar2camera, sensor.r_fish.K, output_dir)
     pass
 
 

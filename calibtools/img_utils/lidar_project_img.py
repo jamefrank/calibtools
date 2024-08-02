@@ -2,7 +2,7 @@
 Author: fanjin 
 Date: 2024-07-19 15:33:04
 LastEditors: fanjin 
-LastEditTime: 2024-07-25 16:07:03
+LastEditTime: 2024-08-02 14:17:00
 FilePath: /calibtools/calibtools/img_utils/lidar_project_img.py
 Description: 
 
@@ -24,9 +24,10 @@ def project_pcd_to_img(img_path: str, pcd_path: str, lidar2camera, K, output_dir
 
     cloud = PointCloud.read_file(pcd_path)
     xyz = cloud.points
-    # xyz = xyz[xyz[:, 0] <= 5]
-    # xyz = xyz[xyz[:, 0] >= 20]
-    # xyz = xyz[xyz[:, 0] <= 55]
+    # xyz = xyz[xyz[:, 0] > 0.5]
+    # xyz = xyz[xyz[:, 0] < 0]
+    # xyz = xyz[xyz[:, 1] > 0]
+    xyz = xyz[xyz[:, 1] < 0]
 
     rvec, tvec = cv2.Rodrigues(lidar2camera[:3, :3])[0], lidar2camera[:3, 3]
 
@@ -67,4 +68,5 @@ def project_pcd_to_img(img_path: str, pcd_path: str, lidar2camera, K, output_dir
             depth = int((depth-depth_min)/(depth_max-depth_min)*(color_cnt-1))
             cv2.circle(img, (int(x), int(y)), 3, color_list[depth], -1)
 
-    cv2.imwrite(os.path.join(output_dir, "test.jpg"), img)
+    img_name = os.path.basename(img_path)
+    cv2.imwrite(os.path.join(output_dir, img_name), img)

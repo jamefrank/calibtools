@@ -2,7 +2,7 @@
 Author: fanjin 
 Date: 2024-07-19 11:18:17
 LastEditors: fanjin 
-LastEditTime: 2024-07-20 22:37:55
+LastEditTime: 2024-08-02 10:34:57
 FilePath: /calibtools/calibtools/file_utils/time_align.py
 Description: 查找文件时间戳对齐 pairs
 
@@ -10,6 +10,7 @@ Copyright (c) 2024 by Frank, All Rights Reserved.
 '''
 
 import os
+from torch import abs_
 from tqdm import tqdm
 from typing import List
 import numpy as np
@@ -97,15 +98,16 @@ def ln_v2(src_dirs: List[str], sub_names: List[str], target_dir: str):
         os.makedirs(target_dir)
 
     # 遍历源目录中的所有文件
-    for src_dir, sub_name in zip(src_dirs, sub_names):
+    for idx, src_dir in enumerate(src_dirs):
         for filename in os.listdir(src_dir):
-            # if filename.endswith('.pcd'):
-            if filename.endswith('.jpg'):
+            if filename.endswith('.pcd'):
+                # if filename.endswith('.jpg'):
                 # 构建完整的源文件路径
                 src_file_path = os.path.join(src_dir, filename)
 
                 # 构建目标文件路径
-                target_file_path = os.path.join(target_dir, sub_name+"_"+filename)
+                target_file_path = os.path.join(
+                    target_dir, sub_names[idx]+"_"+filename) if len(sub_names) == len(src_dirs) else os.path.join(target_dir, filename)
 
                 # 创建软链接
                 try:
@@ -117,6 +119,7 @@ def ln_v2(src_dirs: List[str], sub_names: List[str], target_dir: str):
 
 
 def ln_files(abs_paths: List[str], target_dir: str):
+    os.makedirs(target_dir, exist_ok=True)
     for path in abs_paths:
         basename = os.path.basename(path)
         target_file_path = os.path.join(target_dir, basename)
@@ -130,23 +133,42 @@ def ln_files(abs_paths: List[str], target_dir: str):
 
 
 def main():
-    # #
-    # dst_dir = "/home/frank/data/G3/scan_calib/20240718/lb-rf"
+    # # 所有的pcd集中到一个文件夹内
+    # dst_dir = "/home/frank/data/G3/scan_fish_calib/all_pcds"
     # src_dirs = [
-    #     "/home/frank/data/G3/scan_calib/20240718/side4/lb",
-    #     "/home/frank/data/G3/scan_calib/20240718/side4/rf"
+    #     "/home/frank/data/G3/scan_fish_calib/rslidar/rslidar_2024-08-01-16-31-52_0/sensor/top_st_m1",
+    #     "/home/frank/data/G3/scan_fish_calib/rslidar/rslidar_2024-08-01-16-36-52_1/sensor/top_st_m1",
+    #     "/home/frank/data/G3/scan_fish_calib/rslidar/rslidar_2024-08-01-16-41-52_2/sensor/top_st_m1"
     # ]
-    # sub_names = ["lb", "rf"]
+    # sub_names = []
     # ln_v2(src_dirs, sub_names, dst_dir)
 
-    #
-    dst_dir = "/home/frank/data/G3/scan_calib/20240718/lf-rb"
-    src_dirs = [
-        "/home/frank/data/G3/scan_calib/20240718/side4/lf",
-        "/home/frank/data/G3/scan_calib/20240718/side4/rb"
-    ]
-    sub_names = ["lf", "rb"]
-    ln_v2(src_dirs, sub_names, dst_dir)
+    # 获取文件时间戳对齐pairs
+    pcd_dir = "/home/frank/data/G3/scan_fish_calib/all_pcds"
+    f_dir = "/home/frank/data/G3/scan_fish_calib/f_undist"
+    b_dir = "/home/frank/data/G3/scan_fish_calib/b_undist"
+    l_dir = "/home/frank/data/G3/scan_fish_calib/l_undist"
+    r_dir = "/home/frank/data/G3/scan_fish_calib/r_undist"
+
+    pairs = get_time_align_pairs(pcd_dir, [f_dir, b_dir, l_dir, r_dir], [".pcd", ".jpg", ".jpg", ".jpg", ".jpg"], thresh=0.1*0.5)
+
+    abs_pcd = [os.path.join(pcd_dir, item[0]) for item in pairs]
+    abs_f = [os.path.join(f_dir, item[1]) for item in pairs]
+    abs_b = [os.path.join(b_dir, item[2]) for item in pairs]
+    abs_l = [os.path.join(l_dir, item[3]) for item in pairs]
+    abs_r = [os.path.join(r_dir, item[4]) for item in pairs]
+
+    ln_files(abs_pcd, "/home/frank/data/G3/scan_fish_calib/pcd_f_align")
+    ln_files(abs_f, "/home/frank/data/G3/scan_fish_calib/pcd_f_align")
+
+    ln_files(abs_pcd, "/home/frank/data/G3/scan_fish_calib/pcd_b_align")
+    ln_files(abs_b, "/home/frank/data/G3/scan_fish_calib/pcd_b_align")
+
+    ln_files(abs_pcd, "/home/frank/data/G3/scan_fish_calib/pcd_l_align")
+    ln_files(abs_l, "/home/frank/data/G3/scan_fish_calib/pcd_l_align")
+
+    ln_files(abs_pcd, "/home/frank/data/G3/scan_fish_calib/pcd_r_align")
+    ln_files(abs_r, "/home/frank/data/G3/scan_fish_calib/pcd_r_align")
 
     pass
 
